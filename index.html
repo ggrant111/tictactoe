@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanded Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+    <script defer src="game.js"></script>
+  </head>
+  <body>
+    <div id="gameStatus">
+      <div id="statusText">X's turn</div>
+      <button id="resetButton"><i class="fas fa-sync"></i></button>
+
+    </div>
+    <div class="game-board">
+      <!-- Each main cell contains its own 3x3 grid of sub-cells -->
+      <!-- Main Cell 1 -->
+      <div class="cell main-cell" id="main-cell1">
+        <div class="sub-cell" id="sub-cell1-1"></div>
+        <div class="sub-cell" id="sub-cell1-2"></div>
+        <div class="sub-cell" id="sub-cell1-3"></div>
+        <div class="sub-cell" id="sub-cell1-4"></div>
+        <div class="sub-cell" id="sub-cell1-5"></div>
+        <div class="sub-cell" id="sub-cell1-6"></div>
+        <div class="sub-cell" id="sub-cell1-7"></div>
+        <div class="sub-cell" id="sub-cell1-8"></div>
+        <div class="sub-cell" id="sub-cell1-9"></div>
+      </div>
+      <!-- Main Cell 2 -->
+      <div class="cell main-cell" id="main-cell2">
+        <div class="sub-cell" id="sub-cell2-1"></div>
+        <div class="sub-cell" id="sub-cell2-2"></div>
+        <div class="sub-cell" id="sub-cell2-3"></div>
+        <div class="sub-cell" id="sub-cell2-4"></div>
+        <div class="sub-cell" id="sub-cell2-5"></div>
+        <div class="sub-cell" id="sub-cell2-6"></div>
+        <div class="sub-cell" id="sub-cell2-7"></div>
+        <div class="sub-cell" id="sub-cell2-8"></div>
+        <div class="sub-cell" id="sub-cell2-9"></div>
+      </div>
+      <!-- Main Cell 3 -->
+      <div class="cell main-cell" id="main-cell3">
+        <div class="sub-cell" id="sub-cell3-1"></div>
+        <div class="sub-cell" id="sub-cell3-2"></div>
+        <div class="sub-cell" id="sub-cell3-3"></div>
+        <div class="sub-cell" id="sub-cell3-4"></div>
+        <div class="sub-cell" id="sub-cell3-5"></div>
+        <div class="sub-cell" id="sub-cell3-6"></div>
+        <div class="sub-cell" id="sub-cell3-7"></div>
+        <div class="sub-cell" id="sub-cell3-8"></div>
+        <div class="sub-cell" id="sub-cell3-9"></div>
+      </div>
+      <!-- Main Cell 4 -->
+      <div class="cell main-cell" id="main-cell4">
+        <div class="sub-cell" id="sub-cell4-1"></div>
+        <div class="sub-cell" id="sub-cell4-2"></div>
+        <div class="sub-cell" id="sub-cell4-3"></div>
+        <div class="sub-cell" id="sub-cell4-4"></div>
+        <div class="sub-cell" id="sub-cell4-5"></div>
+        <div class="sub-cell" id="sub-cell4-6"></div>
+        <div class="sub-cell" id="sub-cell4-7"></div>
+        <div class="sub-cell" id="sub-cell4-8"></div>
+        <div class="sub-cell" id="sub-cell4-9"></div>
+      </div>
+      <!-- Main Cell 5 -->
+      <div class="cell main-cell" id="main-cell5">
+        <div class="sub-cell" id="sub-cell5-1"></div>
+        <div class="sub-cell" id="sub-cell5-2"></div>
+        <div class="sub-cell" id="sub-cell5-3"></div>
+        <div class="sub-cell" id="sub-cell5-4"></div>
+        <div class="sub-cell" id="sub-cell5-5"></div>
+        <div class="sub-cell" id="sub-cell5-6"></div>
+        <div class="sub-cell" id="sub-cell5-7"></div>
+        <div class="sub-cell" id="sub-cell5-8"></div>
+        <div class="sub-cell" id="sub-cell5-9"></div>
+      </div>
+      <!-- Main Cell 6 -->
+      <div class="cell main-cell" id="main-cell6">
+        <div class="sub-cell" id="sub-cell6-1"></div>
+        <div class="sub-cell" id="sub-cell6-2"></div>
+        <div class="sub-cell" id="sub-cell6-3"></div>
+        <div class="sub-cell" id="sub-cell6-4"></div>
+        <div class="sub-cell" id="sub-cell6-5"></div>
+        <div class="sub-cell" id="sub-cell6-6"></div>
+        <div class="sub-cell" id="sub-cell6-7"></div>
+        <div class="sub-cell" id="sub-cell6-8"></div>
+        <div class="sub-cell" id="sub-cell6-9"></div>
+      </div>
+      <!-- Main Cell 7 -->
+      <div class="cell main-cell" id="main-cell7">
+        <div class="sub-cell" id="sub-cell7-1"></div>
+        <div class="sub-cell" id="sub-cell7-2"></div>
+        <div class="sub-cell" id="sub-cell7-3"></div>
+        <div class="sub-cell" id="sub-cell7-4"></div>
+        <div class="sub-cell" id="sub-cell7-5"></div>
+        <div class="sub-cell" id="sub-cell7-6"></div>
+        <div class="sub-cell" id="sub-cell7-7"></div>
+        <div class="sub-cell" id="sub-cell7-8"></div>
+        <div class="sub-cell" id="sub-cell7-9"></div>
+      </div>
+      <!-- Main Cell 8 -->
+      <div class="cell main-cell" id="main-cell8">
+        <div class="sub-cell" id="sub-cell8-1"></div>
+        <div class="sub-cell" id="sub-cell8-2"></div>
+        <div class="sub-cell" id="sub-cell8-3"></div>
+        <div class="sub-cell" id="sub-cell8-4"></div>
+        <div class="sub-cell" id="sub-cell8-5"></div>
+        <div class="sub-cell" id="sub-cell8-6"></div>
+        <div class="sub-cell" id="sub-cell8-7"></div>
+        <div class="sub-cell" id="sub-cell8-8"></div>
+        <div class="sub-cell" id="sub-cell8-9"></div>
+      </div>
+      <!-- Main Cell 9 -->
+      <div class="cell main-cell" id="main-cell9">
+        <div class="sub-cell" id="sub-cell9-1"></div>
+        <div class="sub-cell" id="sub-cell9-2"></div>
+        <div class="sub-cell" id="sub-cell9-3"></div>
+        <div class="sub-cell" id="sub-cell9-4"></div>
+        <div class="sub-cell" id="sub-cell9-5"></div>
+        <div class="sub-cell" id="sub-cell9-6"></div>
+        <div class="sub-cell" id="sub-cell9-7"></div>
+        <div class="sub-cell" id="sub-cell9-8"></div>
+        <div class="sub-cell" id="sub-cell9-9"></div>
+      </div>
+  </body>
+</html>
